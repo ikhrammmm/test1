@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wedding Invitation</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            padding: 20px;
+            background: url('images.jpg') no-repeat center center fixed;
+            background-size: cover;
+        }
+        .container {
+            max-width: 500px;
+            margin: auto;
+            background: rgba(255, 255, 255, 0.8);
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        button {
+            background-color: #ff4081;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 16px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Wedding Invitation</h1>
+        <h2>Bride: [Bride's Name]</h2>
+        <p>Date: [Wedding Date]</p>
+        <button onclick="saveEvent()">Save</button>
+        <h3>Location:</h3>
+        <iframe 
+            width="100%" 
+            height="300" 
+            frameborder="0" 
+            style="border:0" 
+            src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d1999.0672234677718!2d100.51416228696566!3d5.687490396383168!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e1!3m2!1sen!2smy!4v1739332607387!5m2!1sen!2smy" 
+            allowfullscreen>
+        </iframe>
+    </div>
+
+    <script>
+        function saveEvent() {
+            alert("Event saved to your calendar!");
+        }
+    </script>
+</body>
+</html>
